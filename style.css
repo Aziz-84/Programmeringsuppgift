@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px;
+  10px/16px=0.625=62.5%
+  Percentage of users browser font-size setting */
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+}
+#app {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10px 200px;
+  box-shadow: 0 1.4rem 1rem rgb(0 0 0 / 20%);
+
+  border-radius: 11px;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 4.8;
+  color: #45260a;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 0.5rem;
+}
+.surName {
+  font-size: 1.5rem;
+  line-height: 7.5;
+  color: #45260a;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.telephone {
+  font-size: 1.8rem;
+  line-height: 11.8;
+  margin-left: 1rem;
+
+  color: #45260a;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.email {
+  font-size: 1.2rem;
+  line-height: 22;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 1rem;
+}
+.image {
+  margin-top: 0.4rem;
+  grid-column: 2/3;
+  margin-right: 1rem;
+}
+.id {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media only screen and (min-width: 300px) {
+  #app {
+    width: 65rem;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+  }
+  .user {
+    max-width: 74%;
+  }
+  .email {
+    font-size: 1rem;
+    line-height: 26;
+  }
+  .image {
+    grid-column: 2/3;
+    margin-right: 10rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #app {
+    width: 65rem;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #app {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    grid-template-columns: 1fr 1fr;
+    width: 140rem;
+  }
+  .email {
+    font-size: 1.2rem;
+    line-height: 22;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 1rem;
+  }
+}
